@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# BUZZ
+for zxb in {1..100}
+do
+  if (( zxb % 3 == 0 && zxb % 5 == 0 )); then
+    echo "FizzBuzz";
+  elif (( zxb % 3 == 0 ));
+  then
+    echo "Fizz";
+  elif (( zxb % 5 == 0 )); then
+    echo "Buzz";
+  else
+    echo "$zxb";
+  fi
+done

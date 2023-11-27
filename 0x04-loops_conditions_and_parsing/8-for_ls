@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# BEST
+blist=$(ls)
+for zb in $blist; do
+  echo "${zb#*-}"
+done

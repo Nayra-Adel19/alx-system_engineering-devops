@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# BEST
+zb=1
+while [ $zb -le 20 ]
+do
+  echo "$zb";
+  case $zb in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( zb++ ));
+done
