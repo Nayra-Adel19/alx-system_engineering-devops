@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# LOCAL HOST
+
+nc -l localhost 98
