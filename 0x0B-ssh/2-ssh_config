@@ -1,0 +1,7 @@
+# HOST
+Host 462549-web-01
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
