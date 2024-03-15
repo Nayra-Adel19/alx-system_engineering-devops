@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Check if there any Gunicorn processes
+
+if pgrep -q gunicorn; then
+    # If processes exist -> send SIGHUP signal
+    pgrep gunicorn | xargs kill -HUP
+    echo "Gunicorn gracefully reloaded."
+else
+    echo "No Gunicorn processes found."
+fi
